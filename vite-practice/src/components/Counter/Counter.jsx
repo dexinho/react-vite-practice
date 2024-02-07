@@ -4,8 +4,8 @@ export const Counter = () => {
   const [count, setCount] = useState(0);
 
   const handleCount = (e) => {
-    if (e.target.value === "-") setCount((prevC) => ++prevC);
-    else if (e.target.value === "+") setCount((prevC) => --prevC);
+    if (e.target.textContent === "+") setCount((prevC) => ++prevC);
+    else if (e.target.textContent === "-") setCount((prevC) => --prevC);
   };
 
   return (
